@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-content">
+        <div className="footer-content">day
           <h3>Eistatech</h3>
           <p>Providing innovative automation solutions.</p>
           <div className="contact-info">
-            <p>Email: info@eistatech.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: </p>
+            <p>Phone: 70589 72300</p>
           </div>
         </div>
         <div className="footer-links">

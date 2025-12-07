@@ -94,6 +94,14 @@ main {
   }
 }
 
+/* Do not apply the animation globally — page-level CSS toggles
+   visibility by adding the `animate` class. This avoids conflicts
+   where a finished animation would revert elements back to
+   their initial (hidden) state. */
 .fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
+  /* initial state for elements that will be animated by JS */
+}
+
+.fade-in-up.animate {
+  animation: fadeInUp 0.8s ease-out forwards;
 }

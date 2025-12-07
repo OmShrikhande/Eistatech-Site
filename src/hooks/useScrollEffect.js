@@ -20,14 +20,44 @@ export const useScrollEffect = () => {
 
     observerRef.current = observer;
 
-    // Observe all elements with fade-in-up class
-    const elements = document.querySelectorAll('.fade-in-up');
-    elements.forEach((el) => observer.observe(el));
+    const observeAll = () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach((el) => {
+        // avoid re-observing elements
+        try {
+          observer.observe(el);
+        } catch (e) {
+          /* ignore already-observed errors */
+        }
+      });
+    };
+
+    observeAll();
+
+    // Watch for dynamically added elements (route changes, lazy load, etc.)
+    const mo = new MutationObserver((mutations) => {
+      mutations.forEach((m) => {
+        m.addedNodes.forEach((node) => {
+          if (!(node instanceof HTMLElement)) return;
+          if (node.classList && node.classList.contains('fade-in-up')) {
+            observer.observe(node);
+          }
+          // also check descendants
+          const descendants = node.querySelectorAll && node.querySelectorAll('.fade-in-up');
+          if (descendants && descendants.length) {
+            descendants.forEach((d) => observer.observe(d));
+          }
+        });
+      });
+    });
+
+    mo.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       if (observerRef.current) {
         observerRef.current.disconnect();
       }
+      mo.disconnect();
     };
   }, []);
 
