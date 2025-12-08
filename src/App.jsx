@@ -5,6 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Team from './pages/Team';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="team" element={<Team />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
