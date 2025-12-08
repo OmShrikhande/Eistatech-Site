@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     document.title = 'Eistatech - Innovative Automation Solutions';
   }, []);
@@ -14,8 +17,8 @@ const Home = () => {
             <h1>Transform Your Business with Automation</h1>
             <p>Eistatech delivers cutting-edge automation solutions that streamline operations, boost efficiency, and drive innovation for businesses of all sizes.</p>
             <div className="hero-buttons">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-secondary">Learn More</button>
+              <button className="btn btn-primary" onClick={() => navigate('/services')}>Get Started</button>
+              <button className="btn btn-secondary" onClick={() => navigate('/about')}>Learn More</button>
             </div>
           </div>
         </div>
@@ -45,10 +48,10 @@ const Home = () => {
       </section>
 
       <section className="cta-section section" style={{backgroundColor: '#f8f9fa'}}>
-        <div className="container text-center">
+          <div className="container text-center">
           <h2>Ready to Automate Your Future?</h2>
           <p>Join hundreds of businesses that have transformed their operations with Eistatech.</p>
-          <button className="btn btn-primary">Contact Us Today</button>
+          <button className="btn btn-primary" onClick={() => navigate('/contact')}>Contact Us Today</button>
         </div>
       </section>
 
@@ -56,7 +59,7 @@ const Home = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat">
-              <div className="stat-number">500+</div>
+              <div className="stat-number">100+</div>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat">
@@ -68,7 +71,7 @@ const Home = () => {
               <div className="stat-label">Support Available</div>
             </div>
             <div className="stat">
-              <div className="stat-number">50+</div>
+              <div className="stat-number">20+</div>
               <div className="stat-label">Team Experts</div>
             </div>
           </div>

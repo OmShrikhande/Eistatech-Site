@@ -8,8 +8,8 @@ const Footer = () => {
           <h3>Eistatech</h3>
           <p>Providing innovative automation solutions.</p>
           <div className="contact-info">
-            <p>Email: info@eistatech.com</p>
-            <p>Phone: +1 (234) 567-890</p>
+            <p>Email: eistatech@example.com</p>
+            <p>Phone: +91 70589 72300</p>
           </div>
         </div>
         <div className="footer-links">

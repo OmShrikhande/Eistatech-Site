@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import './Services.css';
-
+import { useNavigate } from 'react-router-dom';
 const Services = () => {
   useEffect(() => {
     document.title = 'Services - Eistatech';
   }, []);
-
+  const navigate = useNavigate();
   return (
     <div className="services">
       <section className="services-hero parallax-bg">
@@ -25,16 +25,7 @@ const Services = () => {
           </div>
 
           <div className="services-grid">
-            <div className="service-card fade-in-up">
-              <div className="service-icon">⚙️</div>
-              <h3>Process Automation</h3>
-              <p>Streamline your workflows with intelligent automation systems that reduce manual effort and eliminate errors. Our solutions include RPA, workflow automation, and business process optimization.</p>
-              <ul className="service-features">
-                <li>Robotic Process Automation (RPA)</li>
-                <li>Workflow Optimization</li>
-                <li>Quality Assurance Automation</li>
-              </ul>
-            </div>
+            
 
             <div className="service-card fade-in-up">
               <div className="service-icon">🌐</div>
@@ -69,16 +60,7 @@ const Services = () => {
               </ul>
             </div>
 
-            <div className="service-card fade-in-up">
-              <div className="service-icon">🔧</div>
-              <h3>System Integration</h3>
-              <p>Seamlessly integrate disparate systems and applications to create a unified ecosystem. Break down data silos and enable smooth data flow across your organization.</p>
-              <ul className="service-features">
-                <li>API Development</li>
-                <li>Legacy System Modernization</li>
-                <li>Cloud Migration</li>
-              </ul>
-            </div>
+          
 
             <div className="service-card fade-in-up">
               <div className="service-icon">🛡️</div>
@@ -126,7 +108,7 @@ const Services = () => {
         <div className="container text-center">
           <h2>Ready to Automate Your Success?</h2>
           <p>Let's discuss how our solutions can transform your business operations.</p>
-          <button className="btn btn-primary">Get Started Today</button>
+          <button className="btn btn-primary" onClick={() => navigate('/contact')}>Get Started</button>
         </div>
       </section>
     </div>
