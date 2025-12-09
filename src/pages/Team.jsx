@@ -57,16 +57,7 @@ const Team = () => {
       linkedin: '#',
       email: 'arpit@eistatech.com'
     },
-    {
-      id: 6,
-      name: 'Priya Sharma',
-      role: 'Project Manager',
-      image: 'https://via.placeholder.com/300x300/20c997/ffffff?text=PS',
-      bio: 'Agile project manager ensuring successful delivery of complex automation projects. Expert in stakeholder management and risk mitigation.',
-      skills: ['Agile/Scrum', 'Project Management', 'Risk Management', 'Client Relations'],
-      linkedin: '#',
-      email: 'priya@eistatech.com'
-    }
+  
   ];
 
   return (
