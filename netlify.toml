@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
 
 [[redirects]]
@@ -8,10 +8,10 @@
   status = 200
 
 [context.production]
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [context.deploy-preview]
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [context.branch-deploy]
-  command = "npm run build"
+  command = "npm ci && npm run build"
