@@ -145,7 +145,7 @@ const Contact = () => {
                 <div className="info-icon">📍</div>
                 <div className="info-content">
                   <h3>Location</h3>
-                  <p>Mate square<br />Nagpur, India 440022</p>
+                  <p>37, Gorle layout Gopal Nagar Near Bhageshree Bar<br />Nagpur, India 440022</p>
                 </div>
               </div>
               <div className="info-item">

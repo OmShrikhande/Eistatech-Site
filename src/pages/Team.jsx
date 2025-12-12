@@ -1,7 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Team.css';
+import kuldeepImg from '../assets/Kuldeep.png';
+import atharvaImg from '../assets/Atharva.png';
 
 const Team = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   useEffect(() => {
     document.title = 'Team - Eistatech';
   }, []);
@@ -11,11 +15,12 @@ const Team = () => {
       id: 1,
       name: 'Kuldeep Tiwari',
       role: 'CEO & Founder',
-      image: 'https://via.placeholder.com/300x300/007bff/ffffff?text=KT',
+      image: kuldeepImg,
+      imgStyle: { objectPosition: '50% 35%' },
       bio: 'Visionary leader with 8+ years in tech innovation. Expert in strategic planning and business development.',
       skills: ['Leadership', 'Strategy', 'Business Development'],
-      linkedin: '#',
-      email: 'kuldeep@eistatech.com'
+      linkedin: 'https://github.com/kd-26-08-04',
+      email: 'kdkuldeeptiwari26@gmail.com'
     },
     {
       id: 2,
@@ -24,18 +29,18 @@ const Team = () => {
       image: 'https://via.placeholder.com/300x300/28a745/ffffff?text=OS',
       bio: 'Full-stack developer specializing in automation solutions. Passionate about creating scalable and efficient software systems.',
       skills: ['React', 'Node.js', 'Python', 'AI/ML'],
-      linkedin: '#',
+      Github: 'https://github.com/omShrikhande/',
       email: 'om@eistatech.com'
     },
     {
       id: 3,
       name: 'Atharva',
       role: 'Content & Marketing Specialist',
-      image: 'https://via.placeholder.com/300x300/ffc107/000000?text=AT',
+      image: atharvaImg,
       bio: 'Creative professional focused on brand storytelling and digital marketing. Expert in content strategy and user engagement.',
       skills: ['Content Creation', 'Digital Marketing', 'SEO', 'Branding'],
-      linkedin: '#',
-      email: 'atharva@eistatech.com'
+      linkedin: 'https://carbona1.github.io/personalbranding/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAOpJMZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadq8gXdcOCQx1zS74N_CoKYtRVEgewCBcH0gQErzX5NrxJ9XETSg6E6MWQvXg_aem_8n7zWSrN1-JWd50Qc_rfpw',
+      email: 'atharva.chavhan1@gmail.com'
     },
     {
       id: 4,
@@ -82,7 +87,7 @@ const Team = () => {
             {teamMembers.map(member => (
               <div key={member.id} className="team-member-card fade-in-up">
                 <div className="member-image">
-                  <img src={member.image} alt={member.name} />
+                  <img src={member.image} alt={member.name} style={member.imgStyle || {}} />
                   <div className="member-overlay">
                     <div className="member-links">
                       <a href={member.linkedin} className="social-link" title="LinkedIn">
