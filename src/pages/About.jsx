@@ -39,7 +39,7 @@ const About = () => {
           <h2 className="text-center">Our Story</h2>
           <div className="story-content">
             <div className="story-text fade-in-up">
-              <p>Founded in 2020, Eistatech emerged from a vision to bridge the gap between traditional industries and cutting-edge technology. Our founders, recognizing the transformative power of automation, set out to create solutions that would not just improve efficiency but redefine how businesses operate.</p>
+              <p>Founded in 2025, Eistatech emerged from a vision to bridge the gap between traditional industries and cutting-edge technology. Our founders, recognizing the transformative power of automation, set out to create solutions that would not just improve efficiency but redefine how businesses operate.</p>
               <p>Starting with a small team of passionate engineers and innovators, we've grown into a dynamic startup that combines deep technical expertise with creative problem-solving. Our journey has been marked by continuous learning, adaptation, and a relentless commitment to excellence.</p>
             </div>
             <div className="story-stats fade-in-up">
