@@ -1,5 +1,5 @@
 [build]
-  command = "npm ci && npm run build"
+  command = "npm ci && npm install --save-optional @rollup/rollup-linux-x64-gnu && npm run build"
   publish = "dist"
 
 [[redirects]]
@@ -8,10 +8,10 @@
   status = 200
 
 [context.production]
-  command = "npm ci && npm run build"
+  command = "npm ci && npm install --save-optional @rollup/rollup-linux-x64-gnu && npm run build"
 
 [context.deploy-preview]
-  command = "npm ci && npm run build"
+  command = "npm ci && npm install --save-optional @rollup/rollup-linux-x64-gnu && npm run build"
 
 [context.branch-deploy]
-  command = "npm ci && npm run build"
+  command = "npm ci && npm install --save-optional @rollup/rollup-linux-x64-gnu && npm run build"
