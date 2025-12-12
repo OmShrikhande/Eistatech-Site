@@ -95,36 +95,43 @@ const About = () => {
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2020 - Foundation</h3>
-                <p>Eistatech was founded with a vision to revolutionize automation technology.</p>
+                <h3>2024 - Beginning</h3>
+                <p>Started experimenting with IoT, automation, and small hardware–software prototype projects..</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2021 - First Breakthrough</h3>
-                <p>Launched our flagship IoT integration platform, serving 50+ clients.</p>
+                <h3>2025 - Founded</h3>
+                <p>EISTAtech was officially registered and founded with a vision to build smart automation solutions.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2022 - Expansion</h3>
-                <p>Expanded our team to 30 members and opened offices in two major cities.</p>
+                <h3>July 2025 – Expansion to Large-Scale Development</h3>
+                <p>Started building large-scale automation and service-based projects for clients.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2023 - Innovation Peak</h3>
-                <p>Introduced AI-powered automation solutions and achieved 300% growth.</p>
+                <h3>August 2025 – Bus Tracking Project Launch</h3>
+                <p>Began development of an advanced IoT-based Bus Tracking System using GPS and cloud technology.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2024 - Global Recognition</h3>
-                <p>Recognized as one of the top 10 automation startups globally.</p>
+                <h3>October 2025 – AI & ML Integration</h3>
+                <p>Integrated Artificial Intelligence and Machine Learning features into the bus tracking system for prediction and analytics.</p>
+              </div>
+            </div>
+             <div className="timeline-item fade-in-up">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>December 2025 – Ongoing Development</h3>
+                <p>Integrated Artificial Intelligence and Machine Learning features into the bus tracking system for prediction and analytics and expansion into new AI-powered IoT solutions.</p>
               </div>
             </div>
           </div>
