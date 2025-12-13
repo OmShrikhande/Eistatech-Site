@@ -59,14 +59,19 @@
   position: relative;
   height: 300px;
   overflow: hidden;
+  background-color: rgb(247, 175, 41);
 }
 
 .member-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+.member-image img.zoomed {
+  transform: scale(1.1);
 }
 
 .team-member-card:hover .member-image img {
@@ -301,5 +306,33 @@
 
   .member-image {
     height: 250px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .member-image {
+    height: 200px;
+  }
+
+  .section-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .member-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .member-role {
+    font-size: 0.9rem;
+  }
+
+  .member-bio {
+    font-size: 0.9rem;
   }
 }

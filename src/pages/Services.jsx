@@ -72,6 +72,17 @@ const Services = () => {
                 <li>Incident Response</li>
               </ul>
             </div>
+
+            <div className="service-card fade-in-up">
+              <div className="service-icon">🛡️</div>
+              <h3>Machine Learning Solution</h3>
+              <p>We create smart machine learning solutions that power automation, prediction, and data-driven growth. From model development to deployment, we help businesses unlock the true value of their data.</p>
+              <ul className="service-features">
+                <li>Intelligent Data Insights</li>
+                <li>Automation & Prediction</li>
+                <li>End-to-End Implementation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

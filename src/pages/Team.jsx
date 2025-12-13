@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './Team.css';
 import kuldeepImg from '../assets/Kuldeep.png';
 import atharvaImg from '../assets/Atharva.png';
+import omImg from '../assets/om.png';
 
 const Team = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -26,11 +27,11 @@ const Team = () => {
       id: 2,
       name: 'Om Shrikhande',
       role: 'Lead Software Developer',
-      image: 'https://via.placeholder.com/300x300/28a745/ffffff?text=OS',
+      image: omImg,
       bio: 'Full-stack developer specializing in automation solutions. Passionate about creating scalable and efficient software systems.',
       skills: ['React', 'Node.js', 'Python', 'AI/ML'],
-      Github: 'https://github.com/omShrikhande/',
-      email: 'om@eistatech.com'
+      Github: 'omshrikhande.netlify.app',
+      email: 'omshrikhande73@gmail.com'
     },
     {
       id: 3,
