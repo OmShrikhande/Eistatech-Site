@@ -8,6 +8,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <img src={logo} alt="Eistatech" className="logo-image" />
+          {/* <span className="logo-text">EISTAtech</span> */}
         </Link>
         <ul className="navbar-menu">
           <li><Link to="/">Home</Link></li>
