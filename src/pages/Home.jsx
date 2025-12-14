@@ -14,8 +14,10 @@ const Home = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content fade-in-up">
-            <h1>Transform Your Business with Automation</h1>
-            <p>Eistatech delivers cutting-edge automation solutions that streamline operations, boost efficiency, and drive innovation for businesses of all sizes.</p>
+            <h1>EISTATech – IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
+            <p>EISTATech delivers cutting-edge smart home automation,
+IoT systems, AI-based solutions, and custom software development
+for homes, schools, and businesses across India.</p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={() => navigate('/services')}>Get Started</button>
               <button className="btn btn-secondary" onClick={() => navigate('/about')}>Learn More</button>

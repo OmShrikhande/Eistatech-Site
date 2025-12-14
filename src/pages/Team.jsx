@@ -3,6 +3,8 @@ import './Team.css';
 import kuldeepImg from '../assets/Kuldeep.png';
 import atharvaImg from '../assets/Atharva.png';
 import omImg from '../assets/om.png';
+import arpitImg from '../assets/arpit.png';
+
 
 const Team = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -55,13 +57,13 @@ const Team = () => {
     },
     {
       id: 5,
-      name: 'Arpit',
+      name: 'Arpit Mahajan',
       role: 'Data Scientist',
-      image: 'https://via.placeholder.com/300x300/6f42c1/ffffff?text=AP',
+      image: arpitImg,
       bio: 'AI enthusiast specializing in machine learning and predictive analytics. Transforms data into actionable business insights.',
       skills: ['Machine Learning', 'Data Analysis', 'Python', 'TensorFlow'],
-      linkedin: '#',
-      email: 'arpit@eistatech.com'
+      linkedin: 'https://github.com/Arpitmahajan123',
+      email: 'arpitmahajan32@gmail.com'
     },
   
   ];
