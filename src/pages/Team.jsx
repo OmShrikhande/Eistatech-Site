@@ -45,16 +45,16 @@ const Team = () => {
       linkedin: 'https://carbona1.github.io/personalbranding/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAOpJMZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadq8gXdcOCQx1zS74N_CoKYtRVEgewCBcH0gQErzX5NrxJ9XETSg6E6MWQvXg_aem_8n7zWSrN1-JWd50Qc_rfpw',
       email: 'atharva.chavhan1@gmail.com'
     },
-    {
-      id: 4,
-      name: 'Harshal',
-      role: 'Hardware Engineer',
-      image: 'https://via.placeholder.com/300x300/dc3545/ffffff?text=HS',
-      bio: 'Electronics engineer with expertise in IoT devices and PCB design. Brings hardware innovations to life.',
-      skills: ['PCB Design', 'IoT', 'Embedded Systems', 'Prototyping'],
-      linkedin: '#',
-      email: 'harshal@eistatech.com'
-    },
+    // {
+    //   id: 4,
+    //   name: 'Harshal',
+    //   role: 'Hardware Engineer',
+    //   image: 'https://via.placeholder.com/300x300/dc3545/ffffff?text=HS',
+    //   bio: 'Electronics engineer with expertise in IoT devices and PCB design. Brings hardware innovations to life.',
+    //   skills: ['PCB Design', 'IoT', 'Embedded Systems', 'Prototyping'],
+    //   linkedin: '#',
+    //   email: 'harshal@eistatech.com'
+    // },
     {
       id: 5,
       name: 'Arpit Mahajan',
