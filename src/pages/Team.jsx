@@ -20,7 +20,7 @@ const Team = () => {
       role: 'CEO & Founder',
       image: kuldeepImg,
       imgStyle: { objectPosition: '50% 35%' },
-      bio: 'Visionary leader with 8+ years in tech innovation. Expert in strategic planning and business development.',
+      bio: 'Visionary leader with 2+ years in tech innovation. Expert in strategic planning and business development.',
       skills: ['Leadership', 'Strategy', 'Business Development'],
       linkedin: 'https://github.com/kd-26-08-04',
       email: 'kdkuldeeptiwari26@gmail.com'
