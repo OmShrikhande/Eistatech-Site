@@ -83,6 +83,17 @@ const Services = () => {
                 <li>End-to-End Implementation</li>
               </ul>
             </div>
+
+            <div className="service-card fade-in-up">
+              <div className="service-icon">🛡️</div>
+              <h3>Workshop and Training </h3>
+              <p>Our education and training services are designed to nurture innovation, technical excellence, and problem-solving skills through hands-on learning and expert mentorship.</p>
+              <ul className="service-features">
+                <li>Internship & skill development programs</li>
+                <li>Industry-relevant topics</li>
+                <li>Real world Problem Solution</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
