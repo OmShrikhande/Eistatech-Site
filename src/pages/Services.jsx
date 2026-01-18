@@ -12,7 +12,7 @@ const Services = () => {
         <div className="container">
           <div className="hero-content fade-in-up">
             <h1>Our Services</h1>
-            <p className="hero-subtitle">Comprehensive automation solutions tailored to your business needs</p>
+            <p className="hero-subtitle">Industry-focused training and smart technology solutions in AI, IoT, and Automation for students, institutions, and businesses.</p>
           </div>
         </div>
       </section>
@@ -20,8 +20,8 @@ const Services = () => {
       <section className="services-main section">
         <div className="container">
           <div className="services-intro fade-in-up">
-            <h2>Transform Your Business with Cutting-Edge Automation</h2>
-            <p>From intelligent process automation to IoT integration, we deliver end-to-end solutions that drive efficiency and innovation.</p>
+            <h2>Building Intelligent Technology for the Future</h2>
+            <p>From AI-powered software, IoT and automation to drone manufacturing and hands-on training programs, we deliver end-to-end technology solutions for businesses and institutions.</p>
           </div>
 
           <div className="services-grid">
@@ -81,6 +81,18 @@ const Services = () => {
                 <li>Intelligent Data Insights</li>
                 <li>Automation & Prediction</li>
                 <li>End-to-End Implementation</li>
+              </ul>
+            </div>
+
+            <div className="service-card fade-in-up">
+              <div className="service-icon">🛡️</div>
+              <h3>Drone Development</h3>
+              <p>We design and develop intelligent drone solutions by integrating Machine Learning, AI, IoT, and embedded systems. From prototype development to real-world applications, our drones are built for automation, data collection, surveillance, and smart decision-making.</p>
+              <ul className="service-features">
+                <li>Autonomous Flight Systems</li>
+                <li>AI & ML-based Object Detection</li>
+                <li>IoT-Enabled Data Monitoring</li>
+                <li>Custom Drone Prototyping</li>
               </ul>
             </div>
 
