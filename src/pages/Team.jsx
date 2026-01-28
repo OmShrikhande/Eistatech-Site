@@ -22,7 +22,7 @@ const Team = () => {
       imgStyle: { objectPosition: '50% 35%' },
       bio: 'Visionary leader with 2+ years in tech innovation. Expert in strategic planning and business development.',
       skills: ['Leadership', 'Strategy', 'Business Development'],
-      linkedin: 'https://github.com/kd-26-08-04',
+      linkedin: 'www.linkedin.com/in/kuldeep-tiwari-959a3028a',
       email: 'kdkuldeeptiwari26@gmail.com'
     },
     {
