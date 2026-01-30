@@ -4,7 +4,7 @@ import './Contact.css';
 
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Contact Us - Eistatech';
+    document.title = 'Contact Us - EISTATECH';
     emailjs.init('Im_R2DL7YUIGuXvfb');
   }, []);
 

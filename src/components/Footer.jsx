@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h3>Eistatech</h3>
+          <h3>EISTATECH</h3>
           <p>Providing innovative automation solutions.</p>
           <div className="contact-info">
             <p>Email: eistatechofficial@gmail.com</p>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Eistatech. All rights reserved.</p>
+        <p>&copy; 2024 EISTATECH. All rights reserved.</p>
       </div>
     </footer>
   );

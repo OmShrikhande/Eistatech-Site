@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Eistatech - Innovative Automation Solutions';
+    document.title = 'EISTATECH - Innovative Automation Solutions';
   }, []);
 
   return (
@@ -14,8 +14,8 @@ const Home = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content fade-in-up">
-            <h1>EISTATech – IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
-            <p>EISTATech delivers cutting-edge smart home automation,
+            <h1>EISTATECH - IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
+            <p>EISTATECH delivers cutting-edge smart home automation,
 IoT systems, AI-based solutions, and custom software development
 for homes, schools, and businesses across India.</p>
             <div className="hero-buttons">
@@ -28,7 +28,7 @@ for homes, schools, and businesses across India.</p>
 
       <section className="features section">
         <div className="container">
-          <h2 className="text-center">Why Choose Eistatech?</h2>
+          <h2 className="text-center">Why Choose EISTATECH?</h2>
           <div className="features-grid">
             <div className="feature fade-in-up">
               <div className="feature-icon">🚀</div>
@@ -52,7 +52,7 @@ for homes, schools, and businesses across India.</p>
       <section className="cta-section section" style={{backgroundColor: '#f8f9fa'}}>
           <div className="container text-center">
           <h2>Ready to Automate Your Future?</h2>
-          <p>Join hundreds of businesses that have transformed their operations with Eistatech.</p>
+          <p>Join hundreds of businesses that have transformed their operations with EISTATECH.</p>
           <button className="btn btn-primary" onClick={() => navigate('/contact')}>Contact Us Today</button>
         </div>
       </section>

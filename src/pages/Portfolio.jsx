@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = 'Portfolio - Eistatech';
+    document.title = 'Portfolio - EISTATECH';
   }, []);
 
   const devices = [
@@ -179,20 +179,20 @@ const Portfolio = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item fade-in-up">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Projects Completed</div>
+              <div className="stat-number" style={{color: 'rgb(222, 236, 250)'}}>15+</div>
+              <div className="stat-label" style={{color: 'rgb(222, 236, 250)'}}>Projects Completed</div>
             </div>
             <div className="stat-item fade-in-up">
-              <div className="stat-number">98%</div>
-              <div className="stat-label">Client Satisfaction</div>
+              <div className="stat-number" style={{color: 'rgb(222, 236, 250)'}}>98%</div>
+              <div className="stat-label" style={{color: 'rgb(222, 236, 250)'}}>Client Satisfaction</div>
             </div>
             <div className="stat-item fade-in-up">
-              <div className="stat-number">15+</div>
-              <div className="stat-label">Industries Served</div>
+              <div className="stat-number" style={{color: 'rgb(222, 236, 250)'}}>Many</div>
+              <div className="stat-label" style={{color: 'rgb(222, 236, 250)'}}>Industries Served</div>
             </div>
             <div className="stat-item fade-in-up">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Support Available</div>
+              <div className="stat-number" style={{color: 'rgb(222, 236, 250)'}}>24/7</div>
+              <div className="stat-label" style={{color: 'rgb(222, 236, 250)'}}>Support Available</div>
             </div>
           </div>
         </div>

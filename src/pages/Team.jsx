@@ -10,7 +10,7 @@ const Team = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    document.title = 'Team - Eistatech';
+    document.title = 'Team - EISTATECH';
   }, []);
 
   const teamMembers = [
