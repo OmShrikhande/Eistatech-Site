@@ -173,40 +173,7 @@
   font-weight: 500;
 }
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-}
 
-.project-link, .github-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.project-link {
-  background: #007bff;
-  color: #fff;
-}
-
-.project-link:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
-}
-
-.github-link {
-  background: #333;
-  color: #fff;
-}
-
-.github-link:hover {
-  background: #24292e;
-  transform: translateY(-2px);
-}
 
 /* Stats Section */
 .portfolio-stats {
@@ -289,7 +256,5 @@
     margin-bottom: 0.5rem;
   }
 
-  .project-links {
-    flex-direction: column;
-  }
+
 }

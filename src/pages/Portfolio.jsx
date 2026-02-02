@@ -57,8 +57,8 @@ const Portfolio = () => {
       name: 'Manufacturing Process Optimization',
       description: 'Implemented AI-driven process optimization for a leading automotive manufacturer, resulting in 35% efficiency improvement and 25% cost reduction.',
       technologies: ['Python', 'TensorFlow', 'IoT', 'PLC'],
-      link: '#',
-      github: 'https://github.com/omshrikhande/manufacturing-opt',
+      // link: '#',
+      // github: 'https://github.com/omshrikhande/manufacturing-opt',
       category: 'Industrial'
     },
     {
@@ -161,14 +161,7 @@ const Portfolio = () => {
                     <span key={index} className="tech-tag">{tech}</span>
                   ))}
                 </div>
-                <div className="project-links">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <span>View Project</span>
-                  </a>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                    <span>GitHub</span>
-                  </a>
-                </div>
+
               </div>
             ))}
           </div>
