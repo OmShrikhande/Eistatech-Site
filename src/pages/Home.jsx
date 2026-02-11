@@ -1,17 +1,38 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  const videos = [
+    '/Gallery/fish2.mp4',
+    '/Gallery/fish.mp4',
+    // '/Gallery/animal.mp4'
+  ];
 
   useEffect(() => {
     document.title = 'EISTATECH - Innovative Automation Solutions';
   }, []);
 
+  const handleVideoEnd = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+  };
+
   return (
     <div className="home">
       <section className="hero">
+        <video 
+          key={videos[currentVideoIndex]}
+          autoPlay 
+          muted 
+          playsInline
+          onEnded={handleVideoEnd}
+          className="hero-video"
+        >
+          <source src={videos[currentVideoIndex]} type="video/mp4" />
+        </video>
         <div className="container">
           <div className="hero-content fade-in-up">
             <h1>EISTATECH - IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
