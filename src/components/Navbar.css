@@ -41,12 +41,20 @@
   margin-left: 2rem;
 }
 
-.navbar-menu a {
+/* .navbar-menu a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+} */
+.navbar-menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;   /* 👈 ADD THIS LINE HERE */
+  transition: color 0.3s;
 }
+
 
 .navbar-menu a:hover {
   color: #ffb400; /* mustard */

@@ -1,8 +1,15 @@
 .footer {
-  background-color: #007bff; /* blue */
-  color: #2825bb;
+  background-color: rgba(0, 123, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;
   padding: 2rem 0 1rem;
   margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content h3, .footer-content p, .footer-content .contact-info p {
+  color: #ffffff;
 }
 
 .footer-container {
