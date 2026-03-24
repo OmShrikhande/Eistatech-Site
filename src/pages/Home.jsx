@@ -70,7 +70,7 @@ for homes, schools, and businesses across India.</p>
         </div>
       </section>
 
-      <section className="cta-section section" style={{backgroundColor: '#f8f9fa'}}>
+      <section className="cta-section section">
           <div className="container text-center">
           <h2>Ready to Automate Your Future?</h2>
           <p>Join hundreds of businesses that have transformed their operations with EISTATECH.</p>

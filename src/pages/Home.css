@@ -74,6 +74,8 @@
 .hero-buttons .btn-secondary {
   background-color: rgba(255,255,255,0.2);
   border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .hero-buttons .btn-secondary:hover {
@@ -105,14 +107,15 @@
   background-color: #ffffff;
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   text-align: center;
 }
 
 .feature:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .feature-icon {
@@ -154,7 +157,7 @@
 
 /* Stats section */
 .stats {
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   z-index: 1;
 }

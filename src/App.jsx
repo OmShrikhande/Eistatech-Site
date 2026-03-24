@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import Product from './pages/Product';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
+          <Route path="product" element={<Product />} />
           <Route path="contact" element={<Contact />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="team" element={<Team />} />

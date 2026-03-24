@@ -1,11 +1,8 @@
 .footer {
-  background-color: rgba(0, 123, 255, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: #001c3d;
   color: #ffffff;
   padding: 2rem 0 1rem;
   margin-top: auto;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-content h3, .footer-content p, .footer-content .contact-info p {
@@ -54,5 +51,5 @@
   text-align: center;
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
