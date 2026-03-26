@@ -96,8 +96,8 @@ const Product = () => {
         '/web4.jpeg'
       ],
       links: {
-        try: '/contact',
-        install: '#'
+        try: 'https://geopunch.in',
+        install: 'https://play.google.com/store/apps/details?id=com.eistatech.geopunch'
       }
     }
   ];
@@ -183,8 +183,8 @@ const Product = () => {
                           {(showAllImages[product.id] ? product.images : product.images.slice(0, 4)).map((imgSrc, index) => {
                             const isWeb = imgSrc.toLowerCase().includes('web');
                             return (
-                              <div 
-                                key={index} 
+                              <div
+                                key={index}
                                 className={`gallery-img-wrapper ${isWeb ? 'web-frame' : 'mobile-frame'}`}
                                 onClick={() => setLightboxData({ isOpen: true, productId: product.id, imageIndex: index })}
                                 title="Click to view full image"
@@ -258,7 +258,7 @@ const Product = () => {
           <div className="image-lightbox-overlay" onClick={() => setLightboxData({ isOpen: false, productId: null, imageIndex: 0 })}>
             <div className="image-lightbox-content" onClick={(e) => e.stopPropagation()}>
               <button className="image-lightbox-close" onClick={() => setLightboxData({ isOpen: false, productId: null, imageIndex: 0 })}>×</button>
-              
+
               {lightboxData.imageIndex > 0 && (
                 <button className="image-lightbox-nav prev" onClick={handlePrevImage} aria-label="Previous Image">
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -266,9 +266,9 @@ const Product = () => {
                   </svg>
                 </button>
               )}
-              
+
               <img src={currentImage} alt="Expanded Screenshot" className="lightbox-img" />
-              
+
               {lightboxData.imageIndex < activeProduct.images.length - 1 && (
                 <button className="image-lightbox-nav next" onClick={handleNextImage} aria-label="Next Image">
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
