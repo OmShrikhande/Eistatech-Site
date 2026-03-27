@@ -226,7 +226,19 @@ const Product = () => {
                     {expandedProducts[product.id] ? 'View Less' : 'View More Details'}
                   </button>
                   <div className="action-links">
-                    <Link to={product.links.try} className="btn btn-primary">Try Now</Link>
+                    <a 
+                      href={product.links.try} 
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => {
+                        if (!window.confirm("You are being redirected to the GeoPunch website. Do you want to continue?")) {
+                          e.preventDefault();
+                        }
+                      }}
+                    >
+                      Try Now
+                    </a>
                     <a href={product.links.install} className="btn btn-secondary">Install</a>
                   </div>
                 </div>
