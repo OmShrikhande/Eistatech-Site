@@ -96,7 +96,7 @@ const Product = () => {
         '/web4.jpeg'
       ],
       links: {
-        try: 'https://geopunch.in',
+        try: 'https://geopunch.netlify.app/',
         install: 'https://play.google.com/store/apps/details?id=com.eistatech.geopunch'
       }
     }
