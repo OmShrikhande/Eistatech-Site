@@ -35,6 +35,10 @@ const Home = () => {
         </video>
         <div className="container">
           <div className="hero-content fade-in-up">
+            <div className="new-launch-badge" onClick={() => navigate('/product')}>
+              <span className="badge-pulse"></span>
+              ✨ New: Geopunch is Live! Explore Now
+            </div>
             <h1>EISTATECH - IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
             <p>EISTATECH delivers cutting-edge smart home automation,
 IoT systems, AI-based solutions, and custom software development
@@ -43,6 +47,36 @@ for homes, schools, and businesses across India.</p>
               <button className="btn btn-primary" onClick={() => navigate('/services')}>Get Started</button>
               <button className="btn btn-secondary" onClick={() => navigate('/about')}>Learn More</button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Product Section - Geopunch */}
+      <section className="featured-product section">
+        <div className="container">
+          <div className="product-showcase-card">
+             <div className="product-info">
+               <div className="product-label">Just Launched</div>
+               <h2>Geopunch: The Ultimate Employee Management App</h2>
+               <p>Elevate your workforce efficiency with Geopunch. Track attendance, manage tasks, and streamline operations with our cutting-edge AI-powered software.</p>
+               <ul className="product-highlights">
+                 <li>✓ Real-time Location Tracking</li>
+                 <li>✓ Automated Attendance Records</li>
+                 <li>✓ Performance Analytics</li>
+               </ul>
+               <button className="btn btn-primary pulse-btn" onClick={() => navigate('/product')}>
+                 Discover Geopunch
+               </button>
+             </div>
+             <div className="product-visual">
+               <div className="floating-mockup">
+                 <div className="mockup-frame">
+                   <div className="mockup-screen">
+                     <img src="/App1.jpeg" alt="Geopunch App Interface" className="mockup-image" />
+                   </div>
+                 </div>
+               </div>
+             </div>
           </div>
         </div>
       </section>
