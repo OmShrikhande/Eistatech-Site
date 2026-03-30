@@ -96,7 +96,7 @@ const Product = () => {
         '/web4.jpeg'
       ],
       links: {
-        try: 'https://geopunch.netlify.app/',
+        try: 'https://geopuncheistatech.netlify.app/',
         install: 'https://play.google.com/store/apps/details?id=com.eistatech.geopunch'
       }
     }
@@ -226,8 +226,8 @@ const Product = () => {
                     {expandedProducts[product.id] ? 'View Less' : 'View More Details'}
                   </button>
                   <div className="action-links">
-                    <a 
-                      href={product.links.try} 
+                    <a
+                      href={product.links.try}
                       className="btn btn-primary"
                       target="_blank"
                       rel="noopener noreferrer"
