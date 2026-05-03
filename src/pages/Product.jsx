@@ -6,38 +6,13 @@ const Product = () => {
   const [expandedProducts, setExpandedProducts] = useState({});
   const [showAllImages, setShowAllImages] = useState({});
   const [lightboxData, setLightboxData] = useState({ isOpen: false, productId: null, imageIndex: 0 });
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMaximized, setIsMaximized] = useState(false);
-  const videoRef = useRef(null);
-  const modalVideoRef = useRef(null);
+
 
   useEffect(() => {
     document.title = 'Our Products | EISTATECH - Innovative Software Solutions';
   }, []);
 
-  const toggleVideo = () => {
-    const currentVideo = isMaximized ? modalVideoRef.current : videoRef.current;
-    if (currentVideo) {
-      if (isPlaying) {
-        currentVideo.pause();
-      } else {
-        currentVideo.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
 
-  const toggleMaximize = (e) => {
-    e.stopPropagation();
-    setIsMaximized(!isMaximized);
-    // If we transition to maximized, keep play state consistent
-    setTimeout(() => {
-      const currentVideo = !isMaximized ? modalVideoRef.current : videoRef.current;
-      if (currentVideo && isPlaying) {
-        currentVideo.play().catch(() => setIsPlaying(false));
-      }
-    }, 50);
-  };
 
   const toggleExpand = (id) => {
     setExpandedProducts(prev => ({
@@ -160,19 +135,15 @@ const Product = () => {
                         </ul>
                       </div>
                       <div className="product-video-frame">
-                        <div className="video-placeholder" onClick={toggleVideo}>
-                          <video ref={videoRef} loop playsInline>
-                            <source src="/Gallery/fish.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                          </video>
-                          <div className={`video-control-btn ${isPlaying ? 'playing' : 'paused'}`}>
-                            {isPlaying ? '⏸' : '▶'}
-                          </div>
-                          <button className="video-maximize-btn" onClick={toggleMaximize} title="Maximize">
-                            ⛶
-                          </button>
-                          <div className="video-overlay">Demo Video</div>
-                        </div>
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src="https://www.youtube.com/embed/JpO2kFFgqFQ"
+                          title="GeoPunch Demo Video"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                        ></iframe>
                       </div>
                     </div>
                     {/* App Screenshots Gallery */}
@@ -249,17 +220,7 @@ const Product = () => {
       </div>
 
 
-      {isMaximized && (
-        <div className="video-modal-overlay" onClick={toggleMaximize}>
-          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="video-modal-close" onClick={toggleMaximize}>×</button>
-            <video ref={modalVideoRef} controls autoPlay={isPlaying} loop>
-              <source src="/Gallery/fish.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      )}
+
 
       {lightboxData.isOpen && (() => {
         const activeProduct = products.find(p => p.id === lightboxData.productId);
