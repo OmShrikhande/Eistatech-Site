@@ -198,6 +198,99 @@
   transform: translateY(0);
 }
 
+/* STEM Featured Card & Curriculum Breakdown */
+.featured-stem-card {
+  border: 2px solid #007bff;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%);
+  position: relative;
+}
+
+.featured-stem-card::before {
+  background: linear-gradient(90deg, #f59e0b, #007bff);
+}
+
+.stem-badge-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #007bff;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stem-curriculum-showcase {
+  margin-top: 5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.stem-curriculum-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.stem-curriculum-header h2 {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.stem-curriculum-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.stem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.stem-pillar {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stem-pillar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.12);
+  border-color: #3b82f6;
+}
+
+.pillar-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 0.8rem;
+}
+
+.stem-pillar h4 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.stem-pillar p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .services-grid {
@@ -215,4 +308,12 @@
   .process h2 {
     font-size: 2rem;
   }
-}
+
+  .stem-curriculum-showcase {
+    padding: 2rem;
+  }
+
+  .stem-curriculum-header h2 {
+    font-size: 1.8rem;
+  }
+}

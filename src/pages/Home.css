@@ -85,7 +85,9 @@
 
 /* Features section */
 .features {
-  background-color: #f8f9fa;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: relative;
   z-index: 1;
 }
@@ -93,7 +95,7 @@
 .features h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -104,18 +106,22 @@
 }
 
 .feature {
-  background-color: #ffffff;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   text-align: center;
 }
 
 .feature:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.25);
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(0, 123, 255, 0.4);
 }
 
 .feature-icon {
@@ -124,20 +130,22 @@
 }
 
 .feature h3 {
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 .feature p {
-  color: #666;
+  color: #cbd5e1;
   line-height: 1.6;
 }
 
 /* CTA section */
 .cta-section {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.65) 0%, rgba(0, 86, 179, 0.65) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #fff;
   position: relative;
   z-index: 1;
@@ -157,9 +165,12 @@
 
 /* Stats section */
 .stats {
-  background-color: #ffffff;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   position: relative;
   z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .stats-grid {
@@ -176,13 +187,13 @@
 .stat-number {
   font-size: 3rem;
   font-weight: 700;
-  color: #007bff;
+  color: #38bdf8;
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 1.1rem;
-  color: #666;
+  color: #cbd5e1;
   font-weight: 500;
 }
 
@@ -227,7 +238,9 @@
 
 /* Featured Product Section */
 .featured-product {
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: relative;
   z-index: 1;
   padding: 5rem 0;
@@ -238,14 +251,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 24px;
   padding: 4rem;
   color: white;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
   gap: 2rem;
+}
+
+.feature,
+.product-showcase-card,
+.school-stem-card {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
 }
 
 .product-showcase-card::before {
@@ -418,5 +440,172 @@
   
   .product-info h2 {
     font-size: 2rem;
+  }
+}
+
+/* Badge Wrapper */
+.badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.school-badge {
+  background: rgba(255, 193, 7, 0.2) !important;
+  border-color: rgba(255, 193, 7, 0.5) !important;
+  color: #fff8e1 !important;
+}
+
+.school-badge:hover {
+  background: rgba(255, 193, 7, 0.35) !important;
+}
+
+.pulse-gold {
+  background-color: #ffc107 !important;
+  box-shadow: 0 0 0 rgba(255, 193, 7, 0.7) !important;
+}
+
+/* School STEM Section */
+.school-stem-section {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.school-stem-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.school-stem-visual {
+  position: relative;
+}
+
+.stem-image-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  border: 3px solid rgba(0, 123, 255, 0.4);
+}
+
+.stem-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.stem-image-frame:hover .stem-image {
+  transform: scale(1.04);
+}
+
+.stem-floating-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.school-stem-info {
+  text-align: left;
+}
+
+.school-label {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+.school-stem-info h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.school-stem-info p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.school-highlights {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.school-highlights li {
+  font-size: 1.05rem;
+  color: #f1f5f9;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+.school-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-secondary-dark {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-dark:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 992px) {
+  .school-stem-card {
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+  }
+
+  .school-stem-info h2 {
+    font-size: 1.9rem;
   }
 }

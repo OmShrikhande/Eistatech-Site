@@ -96,15 +96,57 @@ const Services = () => {
               </ul>
             </div>
 
-            <div className="service-card fade-in-up">
-              <div className="service-icon">🛡️</div>
-              <h3>Workshop and Training </h3>
-              <p>Our education and training services are designed to nurture innovation, technical excellence, and problem-solving skills through hands-on learning and expert mentorship.</p>
+            <div className="service-card fade-in-up featured-stem-card">
+              <div className="service-icon">🎓</div>
+              <div className="stem-badge-tag">Core School Subject</div>
+              <h3>School IoT & Robotics STEM Curriculum</h3>
+              <p>We empower schools by integrating IoT and Robotics directly into the student academic curriculum as a regular subject, complete with hands-on labs and hardware kits.</p>
               <ul className="service-features">
-                <li>Internship & skill development programs</li>
-                <li>Industry-relevant topics</li>
-                <li>Real world Problem Solution</li>
+                <li>In-School Curriculum Integration</li>
+                <li>Arduino, ESP32 & Robotics Hardware Kits</li>
+                <li>Expert Mentor Workshops & STEM Fairs</li>
               </ul>
+            </div>
+
+            <div className="service-card fade-in-up">
+              <div className="service-icon">💡</div>
+              <h3>Workshop & Industry Training</h3>
+              <p>Our education services nurture technical excellence and problem-solving skills through hands-on learning, internships, and expert mentorship.</p>
+              <ul className="service-features">
+                <li>Internship & Skill Development</li>
+                <li>Industry-Relevant Technologies</li>
+                <li>Real-World Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Detailed STEM Curriculum Breakdown */}
+          <div className="stem-curriculum-showcase fade-in-up">
+            <div className="stem-curriculum-header">
+              <h2>Bringing Robotics & IoT into School Classrooms</h2>
+              <p>Our structured curriculum equips school students with future-ready tech skills early in their academic journey.</p>
+            </div>
+            <div className="stem-grid">
+              <div className="stem-pillar">
+                <div className="pillar-num">01</div>
+                <h4>Curriculum Alignment</h4>
+                <p>Designed for middle and high school students with grade-appropriate syllabus, practical manuals, and interactive projects.</p>
+              </div>
+              <div className="stem-pillar">
+                <div className="pillar-num">02</div>
+                <h4>Hands-on Hardware Kits</h4>
+                <p>Plug-and-play microcontrollers, sensors, motors, and robotics chassis provided for every student team.</p>
+              </div>
+              <div className="stem-pillar">
+                <div className="pillar-num">03</div>
+                <h4>Robotics & IoT Labs</h4>
+                <p>Setting up dedicated IoT & Innovation Labs in partner schools with complete hardware & software support.</p>
+              </div>
+              <div className="stem-pillar">
+                <div className="pillar-num">04</div>
+                <h4>Expos & Competitions</h4>
+                <p>Mentoring students to build real working prototypes for state and national level STEM competitions.</p>
+              </div>
             </div>
           </div>
         </div>

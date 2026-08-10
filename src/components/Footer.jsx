@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h3>EISTATECH</h3>
+          <p className="footer-brand">EISTATECH</p>
           <p>Providing innovative automation solutions.</p>
           <div className="contact-info">
             <p>Email: eistatechofficial@gmail.com</p>
@@ -13,15 +13,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
+          <h4>Follow Us</h4>
+          <div className="social-links">
+            <a href="https://www.instagram.com/eista_tech" target="_blank" rel="noreferrer">
+              <img src="/insta.ico" alt="Instagram" className="social-icon" />
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/eistatech" target="_blank" rel="noreferrer">
+              <img src="/linkedin.ico" alt="LinkedIn" className="social-icon" />
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">

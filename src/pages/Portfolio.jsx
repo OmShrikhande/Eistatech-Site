@@ -108,13 +108,70 @@ const Portfolio = () => {
     }
   ];
 
+  const schoolStemProjects = [
+    {
+      id: 1,
+      title: 'In-School IoT & Robotics Subject Integration',
+      subtitle: 'Regular Academic Subject Program',
+      description: 'EISTATECH officially partnered with schools to introduce IoT & Robotics as an embedded academic subject, training hundreds of students in microcontrollers, sensors, and coding.',
+      image: '/Gallery/school_robotics.png',
+      tags: ['Arduino', 'ESP32', 'Sensors', 'Curriculum Integration'],
+      highlights: ['Over 500+ Students Enrolled', 'Hands-on Classroom Labs', 'Grade-wise Syllabus']
+    },
+    {
+      id: 2,
+      title: 'Interactive Student STEM Hardware Kits',
+      subtitle: 'Hands-on Practical Kits',
+      description: 'Custom-designed plug-and-play STEM learning kits provided to school classrooms, enabling students to construct smart home automation models and robotic rovers.',
+      image: '/Gallery/school_iot_lab.png',
+      tags: ['Robotics Kits', 'STEM Education', 'IoT Sensors'],
+      highlights: ['Custom Hardware Kits', 'Interactive Modules', 'Project Manuals']
+    }
+  ];
+
   return (
     <div className="portfolio">
       <section className="portfolio-hero parallax-bg">
         <div className="container">
           <div className="hero-content fade-in-up">
             <h1>Our Portfolio</h1>
-            <p className="hero-subtitle">Showcasing innovation through technology and automation</p>
+            <p className="hero-subtitle">Showcasing innovation through technology, automation, and school STEM education</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Achievement: School STEM & Robotics Education */}
+      <section className="school-portfolio-section section">
+        <div className="container">
+          <div className="section-header fade-in-up text-center">
+            <span className="section-badge-gold">🌟 Major Company Achievement</span>
+            <h2>School IoT & Robotics Training Program</h2>
+            <p>Transforming classroom education by making IoT and Robotics a practical subject for school students</p>
+          </div>
+
+          <div className="school-portfolio-grid">
+            {schoolStemProjects.map((item) => (
+              <div key={item.id} className="school-portfolio-card fade-in-up">
+                <div className="school-card-visual">
+                  <img src={item.image} alt={item.title} />
+                  <span className="card-badge">{item.subtitle}</span>
+                </div>
+                <div className="school-card-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <div className="card-highlights-list">
+                    {item.highlights.map((h, i) => (
+                      <span key={i} className="highlight-chip">✓ {h}</span>
+                    ))}
+                  </div>
+                  <div className="card-tags">
+                    {item.tags.map((tag, idx) => (
+                      <span key={idx} className="tech-tag">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

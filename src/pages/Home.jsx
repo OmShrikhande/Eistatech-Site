@@ -35,17 +35,58 @@ const Home = () => {
         </video>
         <div className="container">
           <div className="hero-content fade-in-up">
-            <div className="new-launch-badge" onClick={() => navigate('/product')}>
-              <span className="badge-pulse"></span>
-              ✨ New: Geopunch is Live! Explore Now
+            <div className="badge-wrapper">
+              <div className="new-launch-badge school-badge" onClick={() => navigate('/services')}>
+                <span className="badge-pulse pulse-gold"></span>
+                🎓 Achievement: IoT & Robotics STEM Subject Introduced in Schools!
+              </div>
+              <div className="new-launch-badge" onClick={() => navigate('/product')}>
+                <span className="badge-pulse"></span>
+                ✨ New: Geopunch is Live!
+              </div>
             </div>
             <h1>EISTATECH - IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
             <p>EISTATECH delivers cutting-edge smart home automation,
-IoT systems, AI-based solutions, and custom software development
-for homes, schools, and businesses across India.</p>
+IoT systems, AI-based solutions, and hands-on IoT & Robotics education in schools across India.</p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={() => navigate('/services')}>Get Started</button>
               <button className="btn btn-secondary" onClick={() => navigate('/about')}>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* School IoT & Robotics Achievement Section */}
+      <section className="school-stem-section section">
+        <div className="container">
+          <div className="school-stem-card fade-in-up">
+            <div className="school-stem-visual">
+              <div className="stem-image-frame">
+                <img src="/Gallery/school_robotics.png" alt="School Students Learning IoT & Robotics" className="stem-image" />
+                <div className="stem-floating-badge">
+                  <span className="stem-icon">⚡</span> In-School Practical Curriculum
+                </div>
+              </div>
+            </div>
+            <div className="school-stem-info">
+              <div className="school-label">Major Achievement</div>
+              <h2>Building the Next Generation of Tech Innovators</h2>
+              <p>
+               We help schools bring <strong>IoT, microcontrollers, electronics, coding, and robotics</strong> into their classrooms through structured curriculum, hands-on hardware kits, and practical project-based learning.
+              </p>
+              <ul className="school-highlights">
+                <li>🤖 <strong>Hands-on Hardware Kits:</strong> Arduino, ESP32, sensors & motors tailored for school grade levels.</li>
+                <li>📚 <strong>Structured School Syllabus:</strong> Interactive lessons integrated right into the academic curriculum.</li>
+                <li>🏆 <strong>Future Tech Leaders:</strong> Preparing school students for national STEM and innovation expos.</li>
+              </ul>
+              <div className="school-actions">
+                <button className="btn btn-primary" onClick={() => navigate('/services')}>
+                  <strong>View Training Program</strong>
+                </button>
+                <button className="btn btn-secondary-dark" onClick={() => navigate('/portfolio')}>
+                  View Student Projects
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -91,14 +132,14 @@ for homes, schools, and businesses across India.</p>
               <p>Years of experience in designing and implementing sophisticated automation systems that reduce costs and increase productivity.</p>
             </div>
             <div className="feature fade-in-up">
+              <div className="feature-icon">🎓</div>
+              <h3>STEM Education Leadership</h3>
+              <p>Empowering the next generation with practical IoT and robotics training embedded directly inside school academic curriculums.</p>
+            </div>
+            <div className="feature fade-in-up">
               <div className="feature-icon">💡</div>
               <h3>Innovative Solutions</h3>
               <p>We leverage the latest technologies including AI, IoT, and machine learning to create custom solutions tailored to your unique needs.</p>
-            </div>
-            <div className="feature fade-in-up">
-              <div className="feature-icon">🛡️</div>
-              <h3>Reliable Support</h3>
-              <p>Our dedicated support team ensures your systems run smoothly with 24/7 monitoring and rapid response to any issues.</p>
             </div>
           </div>
         </div>
@@ -107,7 +148,7 @@ for homes, schools, and businesses across India.</p>
       <section className="cta-section section">
           <div className="container text-center">
           <h2>Ready to Automate Your Future?</h2>
-          <p>Join hundreds of businesses that have transformed their operations with EISTATECH.</p>
+          <p>Join hundreds of businesses and institutions that have transformed with EISTATECH.</p>
           <button className="btn btn-primary" onClick={() => navigate('/contact')}>Contact Us Today</button>
         </div>
       </section>
@@ -120,12 +161,12 @@ for homes, schools, and businesses across India.</p>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat">
-              <div className="stat-number">98%</div>
-              <div className="stat-label">Client Satisfaction</div>
+              <div className="stat-number">500+</div>
+              <div className="stat-label">School Students Trained</div>
             </div>
             <div className="stat">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Support Available</div>
+              <div className="stat-number">98%</div>
+              <div className="stat-label">Client Satisfaction</div>
             </div>
             <div className="stat">
               <div className="stat-number">20+</div>

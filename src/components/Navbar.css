@@ -1,10 +1,10 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.25rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -16,11 +16,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: bold;
   color: #0a74ee; /* blue */
   text-decoration: none;
@@ -29,9 +29,10 @@
 }
 
 .logo-image {
-  height: 80px;
+  height: 58px;
   width: auto;
-  margin-right: 20px;  margin-top: -5px; margin-bottom: -10px;}
+  margin-right: 14px;
+}
 
 .navbar-menu {
   display: flex;
@@ -41,20 +42,14 @@
 }
 
 .navbar-menu li {
-  margin-left: 2rem;
+  margin-left: 1.2rem;
 }
 
-/* .navbar-menu a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-} */
 .navbar-menu a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.5rem;   /* 👈 ADD THIS LINE HERE */
+  font-size: 1rem;
   transition: color 0.3s;
 }
 
