@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import birdLogo from '../assets/bird_logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -5,8 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <p className="footer-brand">EISTATECH</p>
-          <p>Providing innovative automation solutions.</p>
+          <div className="footer-brand-wrap">
+            <Link to="/" className="footer-logo-link" title="Eistatech Pvt Ltd">
+              <img src={birdLogo} alt="Eistatech Bird Logomark" className="footer-bird-logo" />
+            </Link>
+            <div className="footer-brand-text">
+              <p className="footer-brand">EISTATECH PVT. LTD.</p>
+              <p className="footer-tagline">Innovating with IoT, AI/ML & Automation Solutions.</p>
+            </div>
+          </div>
           <div className="contact-info">
             <p>Email: eistatechofficial@gmail.com</p>
             <p>Phone: +91 70589 72300</p>
@@ -27,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 EISTATECH. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Eistatech Private Limited. All rights reserved.</p>
       </div>
     </footer>
   );

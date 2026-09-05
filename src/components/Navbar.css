@@ -50,12 +50,40 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s;
+  padding: 0.4rem 0.2rem;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
+.navbar-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #0a74ee 0%, #ffb400 100%);
+  border-radius: 4px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .navbar-menu a:hover {
-  color: #ffb400; /* mustard */
+  color: #0a74ee;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-menu a.active {
+  color: #0a74ee;
+  font-weight: 700;
+}
+
+.navbar-menu a.active::after {
+  width: 100%;
+  background: linear-gradient(90deg, #0a74ee 0%, #ffb400 100%);
 }
 
 .navbar-right {
@@ -187,6 +215,18 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffb400;
     padding-left: 2.5rem;
+  }
+
+  .navbar-menu a.active {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffb400;
+    font-weight: 700;
+    border-left: 5px solid #ffb400;
+    padding-left: 2.2rem;
+  }
+
+  .navbar-menu a::after {
+    display: none;
   }
 
   .navbar-right {

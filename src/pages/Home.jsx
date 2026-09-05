@@ -13,7 +13,7 @@ const Home = () => {
   ];
 
   useEffect(() => {
-    document.title = 'EISTATECH - Innovative Automation Solutions';
+    document.title = 'Eistatech Pvt Ltd - Innovative IoT, AI & Automation Solutions';
   }, []);
 
   const handleVideoEnd = () => {
@@ -45,8 +45,8 @@ const Home = () => {
                 ✨ New: Geopunch is Live!
               </div>
             </div>
-            <h1>EISTATECH - IoT, Automation & <br /> AI/ML Solutions for Smart Businesses</h1>
-            <p>EISTATECH delivers cutting-edge smart home automation,
+            <h1>EISTATECH PVT. LTD. <br /> IoT, Automation & AI Solutions</h1>
+            <p>Eistatech Private Limited delivers cutting-edge smart home automation,
 IoT systems, AI-based solutions, and hands-on IoT & Robotics education in schools across India.</p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={() => navigate('/services')}>Get Started</button>

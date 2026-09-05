@@ -3,20 +3,20 @@ import './Team.css';
 import kuldeepImg from '../assets/Kuldeep.png';
 import atharvaImg from '../assets/Atharva.png';
 import omImg from '../assets/om.png';
-import arpitImg from '../assets/arpit.png';
+
 
 
 const Team = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    document.title = 'Team - EISTATECH';
+    document.title = 'Team - Eistatech Pvt Ltd';
   }, []);
 
   const teamMembers = [
     {
       id: 1,
-      name: 'Kuldeep Tiwari',
+      name: 'K.D Tiwari',
       role: 'CEO & Founder',
       image: kuldeepImg,
       imgStyle: { objectPosition: '50% 35%' },

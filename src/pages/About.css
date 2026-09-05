@@ -248,6 +248,40 @@
   line-height: 1.6;
 }
 
+/* Timeline Pvt Ltd Highlight */
+.timeline-item.highlight-item .timeline-content {
+  background: linear-gradient(135deg, #0d2538 0%, #1a365d 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 180, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 20px rgba(255, 180, 0, 0.2);
+}
+
+.timeline-item.highlight-item .timeline-content h3 {
+  color: #ffb400;
+}
+
+.timeline-item.highlight-item .timeline-content p {
+  color: #e2e8f0;
+}
+
+.timeline-dot.highlight-dot {
+  background: #ffb400;
+  box-shadow: 0 0 0 4px rgba(255, 180, 0, 0.3);
+}
+
+.milestone-badge {
+  display: inline-block;
+  background: rgba(255, 180, 0, 0.2);
+  color: #ffb400;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
 /* Scroll Animations */
 .fade-in-up {
   opacity: 0;

@@ -3,7 +3,7 @@ import './Services.css';
 import { useNavigate } from 'react-router-dom';
 const Services = () => {
   useEffect(() => {
-    document.title = 'Services - EISTATECH';
+    document.title = 'Services - Eistatech Pvt Ltd';
   }, []);
   const navigate = useNavigate();
   return (

@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   useEffect(() => {
-    document.title = 'About Us - EISTATECH';
+    document.title = 'About Us - Eistatech Pvt Ltd';
   }, []);
 
   return (
@@ -11,8 +11,8 @@ const About = () => {
       <section className="about-hero parallax-bg">
         <div className="container">
           <div className="hero-content fade-in-up">
-            <h1>About EISTATECH</h1>
-            <p className="hero-subtitle">Pioneering the future of automation technology</p>
+            <h1>About EISTATECH PVT. LTD.</h1>
+            <p className="hero-subtitle">Pioneering IoT, AI/ML & Automation Solutions</p>
           </div>
         </div>
       </section>
@@ -95,43 +95,37 @@ const About = () => {
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2024 - Beginning</h3>
-                <p>Started experimenting with IoT, automation, and small hardware–software prototype projects..</p>
+                <h3>2024 – Beginning</h3>
+                <p>Started experimenting with IoT, automation, and small hardware–software prototype projects.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>2025 - Founded</h3>
-                <p>EISTATECH was officially registered and founded with a vision to build smart automation solutions.</p>
+                <h3>2025 – Foundation & Expansion</h3>
+                <p>EISTATECH was established to build smart automation solutions, expanding into large-scale development, IoT Bus Tracking systems, and AI/ML integration.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>July 2025 – Expansion to Large-Scale Development</h3>
-                <p>Started building large-scale automation and service-based projects for clients.</p>
+                <h3>Early 2026 – GeoPunch Software Launch</h3>
+                <p>Launched GeoPunch, our first flagship software product for real-time employee attendance, task tracking, and workforce management.</p>
               </div>
             </div>
             <div className="timeline-item fade-in-up">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>August 2025 – Bus Tracking Project Launch</h3>
-                <p>Began development of an advanced IoT-based Bus Tracking System using GPS and cloud technology.</p>
+                <h3>June 2026 – IoT & Robotics STEM in Schools</h3>
+                <p>Introduced practical IoT and Robotics as a structured STEM subject in school academic curriculums, empowering hundreds of young innovators.</p>
               </div>
             </div>
-            <div className="timeline-item fade-in-up">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <h3>October 2025 – AI & ML Integration</h3>
-                <p>Integrated Artificial Intelligence and Machine Learning features into the bus tracking system for prediction and analytics.</p>
-              </div>
-            </div>
-             <div className="timeline-item fade-in-up">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <h3>December 2025 – Ongoing Development</h3>
-                <p>Integrated Artificial Intelligence and Machine Learning features into the bus tracking system for prediction and analytics and expansion into new AI-powered IoT solutions.</p>
+            <div className="timeline-item highlight-item fade-in-up">
+              <div className="timeline-dot highlight-dot"></div>
+              <div className="timeline-content highlight-content">
+                <span className="milestone-badge">🎉 Major Milestone</span>
+                <h3>2026 – Incorporated as Eistatech Private Limited</h3>
+                <p>Officially attained Private Limited corporate status as <strong>Eistatech Private Limited</strong>, scaling operations into an enterprise-ready technology firm.</p>
               </div>
             </div>
           </div>

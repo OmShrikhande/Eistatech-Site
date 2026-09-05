@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = 'Portfolio - EISTATECH';
+    document.title = 'Portfolio - Eistatech Pvt Ltd';
   }, []);
 
   const devices = [

@@ -100,13 +100,11 @@ const Contact = () => {
         message: '',
       });
 
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
+      
+      setTimeout(() => setSubmitted(false), 8000);
     } catch (err) {
-      setError('Failed to send message. Please try again later.');
-      console.error('Email error:', err);
-    } finally {
+      console.error('EmailJS Error Details:', err);
+      setError(`Failed to send message: ${err.text || err.message || 'Please try again or contact us directly at eistatechofficial@gmail.com'}`);
       setLoading(false);
     }
   };
@@ -117,7 +115,7 @@ const Contact = () => {
         <div className="container">
           <div className="hero-content fade-in-up">
             <h1>Get In Touch</h1>
-            <p className="hero-subtitle">Let's discuss how we can help transform your business</p>
+            <p className="hero-subtitle">Connect with Eistatech Private Limited for innovative solutions</p>
           </div>
         </div>
       </section>
@@ -138,14 +136,14 @@ const Contact = () => {
                 <div className="info-icon">📞</div>
                 <div className="info-content">
                   <h3>Phone</h3>
-                  <p><a href="tel:+1234567890">+91 70589 72300</a></p>
+                  <p><a href="tel:+917058972300">+91 70589 72300</a></p>
                 </div>
               </div>
               <div className="info-item">
                 <div className="info-icon">📍</div>
                 <div className="info-content">
-                  <h3>Location</h3>
-                  <p>37, Gorle layout Gopal Nagar Near Bhageshree Bar<br />Nagpur, India 440022</p>
+                  <h3>Registered Location</h3>
+                  <p>37, Gorle layout Gopal Nagar Near Bhageshree Bar<br />Nagpur, Maharashtra, India 440022</p>
                 </div>
               </div>
               <div className="info-item">

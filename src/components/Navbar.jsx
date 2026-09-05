@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/EISTATECH_BG.png';
 
@@ -23,13 +23,13 @@ const Navbar = () => {
           </Link>
 
           <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-            <li><Link to="/product" onClick={closeMenu}>Product</Link></li>
-            <li><Link to="/about" onClick={closeMenu}>About us</Link></li>
-            <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
-            <li><Link to="/team" onClick={closeMenu}>Team</Link></li>
-            <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+            <li><NavLink to="/" end onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
+            <li><NavLink to="/services" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Services</NavLink></li>
+            <li><NavLink to="/product" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Product</NavLink></li>
+            <li><NavLink to="/about" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>About us</NavLink></li>
+            <li><NavLink to="/portfolio" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Portfolio</NavLink></li>
+            <li><NavLink to="/team" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Team</NavLink></li>
+            <li><NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink></li>
           </ul>
 
           <div className="navbar-right">
